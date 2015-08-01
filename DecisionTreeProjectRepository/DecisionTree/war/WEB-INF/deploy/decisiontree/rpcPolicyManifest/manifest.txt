@@ -1,0 +1,3 @@
+# Module decisiontree
+# RPC service class, partial path of RPC policy file
+com.google.gwt.decisiontree.client.GreetingService, 1AB02B42A01DF5A086B5815EF076F333.gwt.rpc

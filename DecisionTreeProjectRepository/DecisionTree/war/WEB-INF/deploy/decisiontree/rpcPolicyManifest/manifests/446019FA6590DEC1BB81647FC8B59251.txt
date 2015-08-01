@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.decisiontree.client.GreetingService
+path: 1AB02B42A01DF5A086B5815EF076F333.gwt.rpc
