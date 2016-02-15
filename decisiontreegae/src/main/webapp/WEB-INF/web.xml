@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  version="2.5">
+  <servlet>
+    <servlet-name>problemlist</servlet-name>
+    <servlet-class>com.google.gwt.decisiontree.server.ProblemlistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>problemlist</servlet-name>
+    <url-pattern>/problemlist</url-pattern>
+  </servlet-mapping>
+ <servlet>
+      <servlet-name>sign</servlet-name>
+      <servlet-class>com.google.gwt.decisiontree.server.SignProblemlistServlet</servlet-class>
+ </servlet>
+
+    <servlet-mapping>
+      <servlet-name>sign</servlet-name>
+      <url-pattern>/sign</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+      <servlet-name>insertproblemattribute</servlet-name>
+      <servlet-class>com.google.gwt.decisiontree.server.InsertProblemAttributeServlet</servlet-class>
+ </servlet>
+
+    <servlet-mapping>
+      <servlet-name>insertproblemattribute</servlet-name>
+      <url-pattern>/insertproblemattribute</url-pattern>
+    </servlet-mapping>
+	
+<servlet>
+      <servlet-name>inserttuple</servlet-name>
+      <servlet-class>com.google.gwt.decisiontree.server.InsertTupleServlet</servlet-class>
+ </servlet>
+
+    <servlet-mapping>
+      <servlet-name>inserttuple</servlet-name>
+      <url-pattern>/inserttuple</url-pattern>
+    </servlet-mapping>	
+	
+<servlet>
+      <servlet-name>insertcategorizeddata</servlet-name>
+      <servlet-class>com.google.gwt.decisiontree.server.InsertCategorizedDataServlet</servlet-class>
+ </servlet>
+
+    <servlet-mapping>
+      <servlet-name>insertcategorizeddata</servlet-name>
+      <url-pattern>/insertcategorizeddata</url-pattern>
+    </servlet-mapping>		
+	
+<servlet>
+      <servlet-name>insertclassattributevalue</servlet-name>
+      <servlet-class>com.google.gwt.decisiontree.server.InsertClassAttributeValueServlet</servlet-class>
+ </servlet>
+
+    <servlet-mapping>
+      <servlet-name>insertclassattributevalue</servlet-name>
+      <url-pattern>/insertclassattributevalue</url-pattern>
+    </servlet-mapping>		
+	
+  <welcome-file-list>
+    <welcome-file>welcomepage.jsp</welcome-file>
+  </welcome-file-list>
+<filter>
+  <filter-name>ObjectifyFilter</filter-name>
+  <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+</filter>
+<filter-mapping>
+  <filter-name>ObjectifyFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
+<listener>
+  <listener-class>com.google.gwt.decisiontree.server.OfyHelper</listener-class>
+</listener>
+</web-app>
